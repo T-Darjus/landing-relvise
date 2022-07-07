@@ -1,0 +1,192 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/*-----------------------------*/
+/* BELOW 1024 */
+/*-----------------------------*/
+
+@media (max-width: 64em) {
+  .header__content-img img {
+    opacity: 0.5;
+  }
+  .header__content-title {
+    font-size: 5.2rem;
+    line-height: 6.5rem;
+    padding-top: 6rem;
+  }
+  .header__content-text {
+    color: #545454;
+  }
+  .header__nav-link {
+    font-size: 2rem;
+  }
+  .services__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .services__card {
+    max-width: none;
+  }
+
+  .advantages__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .practice__textbox {
+    padding: 6rem 0 4rem;
+  }
+  .practice__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .whoweare__textbox {
+    padding: 6rem 0;
+  }
+  .whoweare__content {
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: flex-start;
+    gap: 5rem;
+  }
+
+  .whoweare__content-video {
+  }
+  .whoweare__content-video iframe {
+    width: 80vw;
+    position: static;
+  }
+
+  .whoweare__content-column {
+    max-width: 60rem;
+  }
+
+  .whoweare__content-textbox {
+    text-align: center;
+  }
+
+  .listbox-card {
+    justify-content: center;
+  }
+  .subscribe-box-title {
+    max-width: 23rem;
+  }
+  .subscribe-box-title {
+    margin-right: 0;
+  }
+  .getintouch__cardsbox {
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
+    gap: 2rem;
+  }
+  .getintouch__card {
+    margin: 0;
+    flex: 0 1 48%;
+  }
+
+  .footer__links-content {
+    flex-wrap: wrap;
+  }
+}
+
+/*-----------------------------*/
+/* BELOW 768 */
+/*-----------------------------*/
+@media (max-width: 48em) {
+  html {
+    font-size: 56.25%;
+  }
+  .header__content-img img {
+    opacity: 0.3;
+  }
+  .header__nav {
+    justify-content: space-between;
+  }
+  .header__nav-list {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .btn-open {
+    display: block;
+  }
+  .services__cards {
+    grid-template-columns: 1fr;
+  }
+  .advantages__cards,
+  .practice__cards {
+    grid-template-columns: 1fr;
+  }
+  .advantages__cards {
+    padding-bottom: 4rem;
+  }
+
+  .clients__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+  .clients__box-item {
+    height: 5.6rem;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+    padding: 2rem 3rem;
+  }
+  .subscribe-box-title {
+    max-width: none;
+    margin-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  .getintouch__card {
+    flex: 0 1 100%;
+  }
+  .getintouch__card-email {
+    max-width: 20rem;
+  }
+  .agency-body {
+    flex-direction: column;
+  }
+  .agency__textbox {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .footer__links-content {
+    justify-content: space-evenly;
+  }
+  .footer__social-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .footer__social-text {
+    text-align: center;
+  }
+}
+
+/*-----------------------------*/
+/* BELOW 432 */
+/*-----------------------------*/
+@media (max-width: 27em) {
+  html {
+    font-size: 50%;
+  }
+
+  .clients__box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .subscribe-box {
+    padding: 0.5rem 0.5rem;
+    left: 10px;
+  }
+  .subscribe-box-title {
+    text-align: center;
+  }
+}
