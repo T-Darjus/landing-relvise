@@ -124,11 +124,12 @@ h6 {
 }
 .menu__btn {
   background: none;
-  transition: all 0.1s linear;
+  transition: all 0.1s ease-in;
   z-index: 5;
 }
 .header__nav .mobile-nav {
-  transition: all 0.2s linear;
+  transition: 0.3s ease-in;
+  transform: translateX(0);
   opacity: 1;
   pointer-events: all;
   visibility: visible;
@@ -143,5 +144,5 @@ h6 {
   left: 0;
   z-index: 2;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
